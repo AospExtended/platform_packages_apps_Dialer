@@ -271,4 +271,56 @@
     <string name="toast_cannot_write_system_settings" msgid="5614246168296606709">"O app Telefone não tem permissão para gravar nas configurações do sistema."</string>
     <string name="blocked_number_call_log_label" msgid="8912042441473014712">"Bloqueado"</string>
     <string name="accessibility_call_is_active" msgid="2297282583928508760">"Chamada ativa: <xliff:g id="NAMEORNUMBER">^1</xliff:g>"</string>
+
+    <!--  for speed dial -->
+    <string name="speed_dial_settings">Configurações de discagem rápida</string>
+
+    <string name="speed_dial_not_set">(não definido)</string>
+
+    <string name="speed_dial_replace">Substituir</string>
+
+    <string name="speed_dial_delete">Remover</string>
+
+    <string name="speed_dial_unassigned_dialog_title">Tecla não atribuída</string>
+
+    <string name="speed_dial_unassigned_dialog_message">Nenhuma ação de discagem rápida está atribuída a tecla numérica \'<xliff:g id="number">%s</xliff:g>\'. Você quer atribuir uma ação agora?</string>
+
+    <string name="dialog_speed_dial_airplane_mode_message">Para usar a discagem rápida, primeiro desligue o modo avião.</string>
+
+    <string name="yes">Sim</string>
+
+    <string name="no">Não</string>
+
+    <string name="call_log_show_all_slots">Todos os SIMs</string>
+
+    <string name="call_log_all_calls_header">Todas as chamadas</string>
+
+    <!-- Text displayed when the list of incoming calls is empty -->
+    <string name="recentIncoming_empty">Você não tem nenhuma chamada recebida.</string>
+
+    <!-- Text displayed when the list of outgoing calls is empty -->
+    <string name="recentOutgoing_empty">Você não tem nenhum chamada recebida.</string>
+
+    <!-- Text displayed when the call log is empty. -->
+    <string name="recentCalls_empty">Seu registro de chamadas está vazio</string>
+    <string name="calllog_search_hint">"Pesquisar no registro de chamadas"</string>
+    <string name="no_call_log">Não há registro de chamadas</string>
+    <string name="clear">Limpar</string>
+    <string name="description_clear_search">Limpar pesquisa</string>
+    <string name="video_call_welcome_title"><b>Bem-vindo ao novo discador de chamada de Vídeo</b></string>
+    <string name="video_call_welcome_message">Todos nós gostamos de ouvir essa voz familiar no final da linha, mas falar cara-a-cara é muito melhor! Aqui está o que você deve saber para fazer suas conexões em tempo real (ou FaceTime?): Você precisará estar em 4G LTE ou uma conexão Wi-Fi O dispositivo que você está chamando também deve ser chamada de vídeo Compatível As chamadas de vídeo usam seus dados de alta velocidade Você também pode atualizar uma chamada de voz para uma chamada de vídeo Confira <a>https://support.t-mobile.com/docs/DOC-23574</a> para mais informações.</string>
+    <string name="video_call_welcome_message_repeat">Mostrar esta mensagem sempre</string>
+
+    <string name="toast_change_video_call_failed">Não é possível alterar para vídeo chamada, formato de número incorreto</string>
+    <string name="toast_make_video_call_failed">Não é possível fazer vídeo chamada, formato de número incorreto</string>
+    <!-- Add for enhance videocall ui -->
+    <string name="overflowBothCallMenuItemText">Chamada de vídeo, mostre-me</string>
+    <string name="overflowRXCallMenuItemText">Chamada de vídeo, mostre-me</string>
+    <string name="overflowVOCallMenuItemText">Chamada de voz</string>
+    <string name="video_call">Chamada de vídeo</string>
+    <string name="call_data_info_label">Informações de uso de chamadas/dados</string>
+    <string name="call_data_info_description">Tempo de uso da chamada de voz e tempo de uso de dados</string>
+    <string name="alert_call_over_wifi">As chamadas serão feitas através de Wifi.</string>
+    <string name="alert_call_no_cellular_coverage">Nenhuma rede celular disponível. Conecte-se ao Wifi disponível para fazer chamadas.</string>
+    <string name="alert_user_connect_to_wifi_for_call">Conecte-se a Wifi para fazer chamadas.</string>
 </resources>

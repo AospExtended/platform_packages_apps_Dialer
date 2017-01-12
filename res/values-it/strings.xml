@@ -271,4 +271,43 @@
     <string name="toast_cannot_write_system_settings" msgid="5614246168296606709">"L\'app Telefono non dispone dell\'autorizzazione per modificare le impostazioni di sistema."</string>
     <string name="blocked_number_call_log_label" msgid="8912042441473014712">"Bloccato"</string>
     <string name="accessibility_call_is_active" msgid="2297282583928508760">"<xliff:g id="NAMEORNUMBER">^1</xliff:g> è attivo"</string>
+  
+    <!--  for speed dial -->
+    <string name="speed_dial_settings">Impostazioni composizione rapida</string>
+    <string name="speed_dial_not_set">(non impostato)</string>
+    <string name="speed_dial_replace">Sostituisci</string>
+    <string name="speed_dial_delete">Elimina</string>
+    <string name="speed_dial_unassigned_dialog_title">Tasto non assegnato</string>
+    <string name="speed_dial_unassigned_dialog_message">Nessuna azione di composizione rapida è assegnato al tasto numerico \'<xliff:g id="number">%s</xliff:g>\'. Vuoi assegnare un\'azione ora?</string>
+    <string name="dialog_speed_dial_airplane_mode_message">Per utilizzare la composizione rapida, innanzitutto disattiva la modalità aereo.</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="call_log_show_all_slots">Tutte le SIM</string>
+    <string name="call_log_all_calls_header">Tutte le chiamate</string>
+    <!-- Text displayed when the list of incoming calls is empty -->
+    <string name="recentIncoming_empty">Nessuna chiamata in entrata.</string>
+    <!-- Text displayed when the list of outgoing calls is empty -->
+    <string name="recentOutgoing_empty">Nessuna chiamata in uscita.</string>
+    <!-- Text displayed when the call log is empty. -->
+    <string name="recentCalls_empty">Il registro chiamate è vuoto</string>
+    <string name="calllog_search_hint">"Ricerca registro chiamate"</string>
+    <string name="no_call_log">Nessun registro delle chiamate</string>
+    <string name="clear">Cancella</string>
+    <string name="description_clear_search">Cancella ricerca</string>
+    <string name="video_call_welcome_title"><b>Benvenuto nella nuova chiamata video</b></string>
+    <string name="video_call_welcome_message">Tutti noi amiamo sentire quella voce familiare alla fine della linea, ma parlare faccia a faccia è molto meglio! Ecco quello che dovete sapere per ottenere in tempo reale (o FaceTime?) le connessioni che vanno: Avrete bisogno di avere il 4G/LTE o una connessione Wi-Fi, il dispositivo che si sta chiamando, deve avere anche la chiamata video compatibile e deve utilizzare i dati ad alta velocità. È inoltre possibile aggiornare una chiamata vocale a una chiamata video in partenza <a>https://support.t-mobile.com/docs/DOC-23574</a> per maggiori informazioni.</string>
+    <string name="video_call_welcome_message_repeat">Mostra questo messaggio ogni volta</string>
+
+    <string name="toast_change_video_call_failed">Non puoi passare alla chiamata video, il formato numerico non è corretto</string>
+    <string name="toast_make_video_call_failed">Non è possibile effettuare chiamate video, formato numerico errato</string>
+    <!-- Add for enhance videocall ui -->
+    <string name="overflowBothCallMenuItemText">Mostra chiamata video</string>
+    <string name="overflowRXCallMenuItemText">Nascondi chiamata video</string>
+    <string name="overflowVOCallMenuItemText">Chiamata vocale</string>
+    <string name="video_call">Videochiamate</string>
+    <string name="call_data_info_label">Durata utilizzo chiamata/dati</string>
+    <string name="call_data_info_description">Tempo di utilizzo della chiamata vocale e dei dati</string>
+    <string name="alert_call_over_wifi">Verranno effettuate chiamate tramite il Wi-Fi.</string>
+    <string name="alert_call_no_cellular_coverage">Rete cellulare non disponibile. Connettersi al Wi-Fi disponibile per effettuare chiamate.</string>
+    <string name="alert_user_connect_to_wifi_for_call">Connettersi al Wi-Fi per effettuare chiamate.</string>
 </resources>

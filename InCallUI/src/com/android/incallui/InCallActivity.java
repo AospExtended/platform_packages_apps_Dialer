@@ -35,6 +35,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.Point;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.os.Trace;
 import android.support.design.widget.TabLayout;
 import android.telecom.DisconnectCause;
@@ -192,8 +193,11 @@ public class InCallActivity extends TransactionSafeActivity implements
 
         getWindow().addFlags(flags);
 
-        // Enable Sustained Performance Mode
-        getWindow().setSustainedPerformanceMode(true);
+        // Enable Sustained Performance Mode if device power hal supports it
+        PowerManager powerManager = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
+        if (powerManager.isSustainedPerformanceModeSupported()) {
+            getWindow().setSustainedPerformanceMode(true);
+        }
 
         // Setup action bar for the conference call manager.
         requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);

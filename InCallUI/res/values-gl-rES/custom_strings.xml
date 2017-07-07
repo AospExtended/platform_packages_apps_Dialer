@@ -39,7 +39,7 @@
   <string name="onscreenStopCallRecordText">Parar a gravación</string>
   <string name="recording_time_text">Gravando</string>
   <string name="recording_warning_title">Habilitar a gravación de chamadas?</string>
-  <string name="recording_warning_text">Aviso: O cumprimento das leis, regulacións e regras que se aplican ao uso das gravacións de chamadas, súa distribución e o uso das mesmas é responsabilidade do usuario final.</string>
+  <string name="recording_warning_text">Aviso: O cumprimento das leis, regulacións e regras que se aplican ao uso das gravacións de chamadas, súa distribución e o uso das mesmas é responsabilidade túa.</string>
   <string name="call_failed_due_to_validate_number">Incapaz de facer a videochamada, o formato do número é incorrecto</string>
   <string name="call_state_dialing">Chamando</string>
   <string name="call_state_holding">En espera</string>

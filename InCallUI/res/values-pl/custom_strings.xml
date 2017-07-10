@@ -28,4 +28,13 @@
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
   <!-- In-call screen: status label for a call that is held remotely  -->
+  <string name="card_title_waiting_call">Połączenie oczekujące</string>
+  <string name="call_recording_failed_message">Nie udało się rozpocząć nagrywania</string>
+  <string name="onscreenStopCallRecordText">Zatrzymaj nagrywanie</string>
+  <string name="recording_time_text">Nagrywanie</string>
+  <string name="call_state_active">Aktywny</string>
+  <string name="call_state_unknown">Nieznany</string>
+  <string name="call_state_disconnecting">Rozłączanie</string>
+  <string name="call_state_disconnected">Rozłączono</string>
+  <string name="too_many_recipients">Nie więcej niż 6 osób może uczestniczyć w konferencji 4G.</string>
 </resources>

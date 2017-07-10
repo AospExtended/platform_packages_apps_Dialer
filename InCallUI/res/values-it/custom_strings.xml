@@ -20,7 +20,7 @@
   <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
   <string name="callFailed_incoming_cb_enabled">Il corrispondente ha bloccato tutte le chiamate in arrivo.</string>
   <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">Chiamata non risposta e inoltrata</string>
+  <string name="callUnanswered_forwarded">Chiamata senza risposta e inoltrata</string>
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
   <string name="incall_call_type_label_forwarded">Chiamata inoltrata</string>
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
@@ -39,7 +39,7 @@
   <string name="onscreenStopCallRecordText">Interrompi la registrazione</string>
   <string name="recording_time_text">Registrazione in corso</string>
   <string name="recording_warning_title">Attivare la registrazione della chiamata?</string>
-  <string name="recording_warning_text">Avviso: Tu sei responsabile della conformità con eventuali leggi, regolamenti e norme che si applicano all\'utilizzo, condivisione e distribuzione sulle registrazioni delle chiamate.</string>
+  <string name="recording_warning_text">Avviso: Tu sei responsabile della conformità con eventuali leggi, regolamenti e norme che si applicano all\'utilizzo della funzionalità di registrazione delle chiamate e all\'uso o alla distribuzione di tali registrazioni.</string>
   <string name="call_failed_due_to_validate_number">Impossibile effettuare la videochiamata, il formato del numero non è corretto</string>
   <string name="call_state_dialing">Chiamata in corso</string>
   <string name="call_state_holding">In attesa</string>

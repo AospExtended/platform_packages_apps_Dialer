@@ -44,6 +44,7 @@
   <string name="call_state_dialing">Chamando</string>
   <string name="call_state_holding">En espera</string>
   <string name="call_state_active">Activo</string>
+  <string name="call_state_unknown">Descoñecido</string>
   <string name="call_state_disconnecting">Desconectando</string>
   <string name="call_state_disconnected">Desconectado</string>
   <string name="too_many_recipients">Nas chamadas de conferencias sobre 4G como máximo poden participar 6 persoas.</string>

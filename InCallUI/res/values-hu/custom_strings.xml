@@ -39,7 +39,7 @@
   <string name="onscreenStopCallRecordText">Felvétel leállítása</string>
   <string name="recording_time_text">Felvétel</string>
   <string name="recording_warning_title">Bekapcsolja a hívásrögzítést?</string>
-  <string name="recording_warning_text">Figyelmeztetés: Ön a felelős a törvények, szabályok, előírások betartásáért ami a hívás felvétel funkció használatáért, és a felvételek felhasználására, terjesztésére vonatkozik.</string>
+  <string name="recording_warning_text">Figyelmeztetés: Ön a felelős a törvények, szabályok, előírások betartásáért, ami a hívásfelvétel funkció használatára és a felvételek felhasználására, terjesztésére vonatkozik.</string>
   <string name="call_failed_due_to_validate_number">Nem lehet videóhívást indítani, a szám formátuma helytelen</string>
   <string name="call_state_dialing">Tárcsázás</string>
   <string name="call_state_holding">Tartás</string>

@@ -43,6 +43,7 @@
   <string name="call_failed_due_to_validate_number">无法进行视频通话，号码格式错误</string>
   <string name="call_state_dialing">正在拨号</string>
   <string name="call_state_holding">通话中</string>
+  <string name="call_state_active">激活</string>
   <string name="call_state_unknown">未知</string>
   <string name="call_state_disconnecting">正在断开连接</string>
   <string name="call_state_disconnected">已断开连接</string>

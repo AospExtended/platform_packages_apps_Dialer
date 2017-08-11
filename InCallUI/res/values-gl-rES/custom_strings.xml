@@ -34,7 +34,7 @@
   <!-- In-call screen: status label for a call that is held remotely  -->
   <string name="card_title_waiting_call">Chamada en espera</string>
   <string name="call_recording_failed_message">Erro ao comezar a gravar a chamada</string>
-  <string name="call_recording_file_location">Gardada a grabación da chamada en <xliff:g id="filename">%s</xliff:g></string>
+  <string name="call_recording_file_location">Gardada a gravación da chamada en <xliff:g id="filename">%s</xliff:g></string>
   <string name="onscreenCallRecordText">Gravar chamada</string>
   <string name="onscreenStopCallRecordText">Parar a gravación</string>
   <string name="recording_time_text">Gravando</string>

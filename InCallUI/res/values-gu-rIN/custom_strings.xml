@@ -18,12 +18,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
+  <string name="callFailed_incoming_cb_enabled">પાર્ટીએ તમામ ઇનકમિંગ કૉલ્સ પર પ્રતિબંધ મૂક્યો છે.</string>
   <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+  <string name="callUnanswered_forwarded">કોલ અનુત્તરિત છે અને ફોરવર્ડ કરવામાં આવે છે</string>
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
+  <string name="incall_call_type_label_forwarded">ફોરવર્ડ કરેલો કોલ</string>
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
   <!-- In-call screen: status label for an outgoing call that's routed via a specific
          provider (e.g. MSIM) and is waiting for the busy remote side -->
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
   <!-- In-call screen: status label for a call that is held remotely  -->
+  <string name="card_title_waiting_call">રાહ કોલ</string>
+  <string name="call_recording_failed_message">કોલ રેકોર્ડિંગ શરૂ થઈ નહિ શક્યું</string>
+  <string name="onscreenCallRecordText">કોલ રેકોર્ડ કરો</string>
+  <string name="onscreenStopCallRecordText">રેકોર્ડિંગ અટકાવો</string>
+  <string name="recording_time_text">રેકોર્ડિંગ</string>
+  <string name="recording_warning_title">કોલ રેકોર્ડિંગ શરૂ કરી?</string>
+  <string name="recording_warning_text">નોટિસ: તમે કોઈ પણ કાયદા, નિયમનો અને નિયમોના પાલન માટે જવાબદાર છો, જે કોલ રેકોર્ડીંગ કાર્યક્ષમતાના ઉપયોગ અને તે રેકોર્ડિંગનો ઉપયોગ અથવા વિતરણનો ઉપયોગ કરે છે.</string>
+  <string name="call_failed_due_to_validate_number">વિડિઓ કૉલ કરવામાં અસમર્થ, નંબર ફોર્મેટ સાચું નથી</string>
+  <string name="call_state_dialing">ડાયલિંગ</string>
+  <string name="call_state_holding">હોલ્ડિંગ</string>
+  <string name="call_state_active">સક્રિય</string>
+  <string name="call_state_disconnecting">ડિસ્કનેક્ટિંગ</string>
+  <string name="call_state_disconnected">ડિસ્કનેક્ટેડ</string>
+  <string name="too_many_recipients">4 જી કોન્ફરન્સ કૉલમાં 6 થી વધુ લોકો ભાગ લઈ શકશે નહિ.</string>
 </resources>

@@ -26,4 +26,6 @@
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
   <!-- In-call screen: status label for a call that is held remotely  -->
+  <string name="call_state_disconnecting">接続を切断中</string>
+  <string name="call_state_disconnected">切断されました</string>
 </resources>

@@ -23,4 +23,10 @@
         android:title="@string/fullscreen_caller_photo_title"
         android:summary="@string/fullscreen_caller_photo_summary"
         android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="enable_post_call"
+        android:title="@string/enable_post_call_title"
+        android:summary="@string/enable_post_call_summary" />
+
 </PreferenceScreen>

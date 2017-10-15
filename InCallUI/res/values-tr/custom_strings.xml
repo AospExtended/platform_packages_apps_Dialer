@@ -30,6 +30,7 @@
   <string name="calling_via_waiting_template"><xliff:g id="PROVIDER_NAME">%s</xliff:g> üzerinden çağrı yapılıyor</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
+  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (via <xliff:g id="provider_name">%2$s</xliff:g>)</string>
   <!-- In-call screen: status label for a call that is held remotely  -->
   <string name="card_title_waiting_call">Arama bekleniyor</string>
   <string name="call_recording_failed_message">Arama ses kaydı başlatılamadı</string>
@@ -38,6 +39,7 @@
   <string name="onscreenStopCallRecordText">Kaydı durdur</string>
   <string name="recording_time_text">Kayıt ediliyor</string>
   <string name="recording_warning_title">Çağrı kayıt etkinleştirilsin mi?</string>
+  <string name="recording_warning_text">Uyarı: Çağrı kayıt işlevinin kullanımı ve bu kayıtların kullanılması veya dağıtımı için geçerli olan tüm yasalara, düzenlemelere ve kurallara uyulmasından siz sorumlusunuz.</string>
   <string name="call_failed_due_to_validate_number">Video arama yapılamıyor, numara formatı doğru değil</string>
   <string name="call_state_dialing">Aranıyor</string>
   <string name="call_state_holding">Bekletiliyor</string>

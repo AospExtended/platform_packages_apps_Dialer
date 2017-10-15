@@ -18,12 +18,33 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
+  <string name="callFailed_incoming_cb_enabled">पार्टी के सभी आने वाली कॉल वर्जित है.</string>
   <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+  <string name="callUnanswered_forwarded">कॉल अनुत्तरित और अग्रेषित</string>
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
+  <string name="incall_call_type_label_forwarded">अग्रेषित कॉल</string>
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
+  <string name="card_title_dialing_waiting">डायलिंग (waiting\u2026)</string>
   <!-- In-call screen: status label for an outgoing call that's routed via a specific
          provider (e.g. MSIM) and is waiting for the busy remote side -->
+  <string name="calling_via_waiting_template">के माध्यम से फोन <xliff:g id = "provider_name" >%s </xliff:g> (Waiting\u2026)</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
+  <string name="card_title_active_via_template">< xliff:g id="स्थिति" उदाहरण="कॉल होल्ड पर">%1$s</xliff:g> (via <xliff:g id ="प्रदाता_नाम" >%2$s </xliff:g>)</string>
   <!-- In-call screen: status label for a call that is held remotely  -->
+  <string name="card_title_waiting_call">कॉल प्रतीक्षा</string>
+  <string name="call_recording_failed_message">कॉल रिकॉर्डिंग प्रारंभ करने में विफल</string>
+  <string name="call_recording_file_location">कॉल रिकॉर्डिंग सहेजी गई <xliff:g id="filename">%s</xliff:g></string>
+  <string name="onscreenCallRecordText">रिकॉर्ड कॉल</string>
+  <string name="onscreenStopCallRecordText">रिकॉर्डिंग रोकें</string>
+  <string name="recording_time_text">रिकॉर्डिंग</string>
+  <string name="recording_warning_title">कॉल रिकॉर्डिंग सक्षम करें?</string>
+  <string name="recording_warning_text">सूचना: आप किसी भी कानून, विनियमों और नियमों के अनुपालन के लिए जिम्मेदार हैं जो कॉल रिकॉर्डिंग कार्यक्षमता और उपयोग या उन रिकॉर्डिंग के वितरण के उपयोग पर लागू होते हैं.</string>
+  <string name="call_failed_due_to_validate_number">वीडियो कॉल करने में असमर्थ, संख्या स्वरूप सही नहीं है</string>
+  <string name="call_state_dialing">डायलिंग</string>
+  <string name="call_state_holding">पकड़</string>
+  <string name="call_state_active">सक्रिय</string>
+  <string name="call_state_disconnecting">डिस्कनेक्ट कर रहा है</string>
+  <string name="call_state_disconnected">डिस्कनेक्‍ट किया गया</string>
+  <string name="too_many_recipients">कोई अधिक से अधिक 6 लोगों को एक 4g सम्मेलन कॉल में भाग ले सकते हैं.</string>
 </resources>

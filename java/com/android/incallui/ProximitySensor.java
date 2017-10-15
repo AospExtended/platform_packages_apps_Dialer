@@ -27,7 +27,7 @@ import android.hardware.SensorManager;
 import android.os.Handler;
 import android.os.PowerManager;
 import android.os.Trace;
-import android.provider.Settings;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.telecom.CallAudioState;
 import android.view.Display;
@@ -77,6 +77,8 @@ public class ProximitySensor
   private SharedPreferences mPrefs;
   private Context context;
 
+  private SharedPreferences prefs;
+
   private final Handler handler = new Handler();
   private final Runnable activateSpeaker = new Runnable() {
     @Override
@@ -123,6 +125,8 @@ public class ProximitySensor
 
     this.audioModeProvider = audioModeProvider;
     this.audioModeProvider.addListener(this);
+
+    prefs = PreferenceManager.getDefaultSharedPreferences(context);
     Trace.endSection();
   }
 
@@ -368,15 +372,15 @@ public class ProximitySensor
     handler.removeCallbacks(activateSpeaker);
 
     final int audioState = audioModeProvider.getAudioState().getRoute();
+    final boolean isProxSpeakerEnabled =
+        prefs.getBoolean("proximity_auto_speaker", false);
     final boolean proxSpeakerIncallOnlyPref =
-        Settings.System.getInt(context.getContentResolver(),
-        Settings.System.PROXIMITY_AUTO_SPEAKER_INCALL_ONLY, 0) == 1;
-    proxSpeakerDelay = Settings.System.getInt(context.getContentResolver(),
-        Settings.System.PROXIMITY_AUTO_SPEAKER_DELAY, 3000);
+        prefs.getBoolean("proximity_auto_speaker_incall_only", false);
+    final int proxSpeakerDelay = Integer.valueOf(
+        prefs.getString("proximity_auto_speaker_delay", "3000"));
 
     // if phone off hook (call in session), and prox speaker feature is on
-    if (isPhoneOffhook && Settings.System.getInt(context.getContentResolver(),
-        Settings.System.PROXIMITY_AUTO_SPEAKER, 0) == 1
+    if (isPhoneOffhook && isProxSpeakerEnabled
         // as long as AudioState isn't currently wired headset or bluetooth
         && audioState != CallAudioState.ROUTE_WIRED_HEADSET
         && audioState != CallAudioState.ROUTE_BLUETOOTH) {

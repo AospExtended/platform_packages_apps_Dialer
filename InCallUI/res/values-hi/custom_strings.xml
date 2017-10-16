@@ -30,7 +30,7 @@
   <string name="calling_via_waiting_template">के माध्यम से फोन <xliff:g id = "provider_name" >%s </xliff:g> (Waiting\u2026)</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template">< xliff:g id="स्थिति" उदाहरण="कॉल होल्ड पर">%1$s</xliff:g> (via <xliff:g id ="प्रदाता_नाम" >%2$s </xliff:g>)</string>
+  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (via <xliff:g id ="provider_name">%2$s</xliff:g>)</string>
   <!-- In-call screen: status label for a call that is held remotely  -->
   <string name="card_title_waiting_call">कॉल प्रतीक्षा</string>
   <string name="call_recording_failed_message">कॉल रिकॉर्डिंग प्रारंभ करने में विफल</string>

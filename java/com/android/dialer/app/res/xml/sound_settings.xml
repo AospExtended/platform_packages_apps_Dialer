@@ -37,6 +37,11 @@
     android:persistent="false"
     android:title="@string/dtmf_tone_enable_title"/>
 
+  <SwitchPreference
+    android:defaultValue="false"
+    android:key="incall_enable_dnd"
+    android:title="@string/incall_enable_dnd_title"/>
+
   <ListPreference
     android:entries="@array/dtmf_tone_length_entries"
     android:entryValues="@array/dtmf_tone_length_entry_values"

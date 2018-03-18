@@ -143,6 +143,7 @@ public class InCallPresenter implements CallList.Listener, AudioModeProvider.Aud
   private CallList callList;
   private ExternalCallList externalCallList;
   private InCallActivity inCallActivity;
+  private InCallDndHandler dndHandler;
   private ManageConferenceActivity manageConferenceActivity;
   private final android.telecom.Call.Callback callCallback =
       new android.telecom.Call.Callback() {
@@ -360,6 +361,9 @@ public class InCallPresenter implements CallList.Listener, AudioModeProvider.Aud
     EnrichedCallComponent.get(this.context)
         .getEnrichedCallManager()
         .registerStateChangedListener(this.statusBarNotifier);
+
+    dndHandler = new InCallDndHandler(context);
+    addListener(dndHandler);
 
     this.proximitySensor = proximitySensor;
     addListener(this.proximitySensor);
@@ -1647,6 +1651,11 @@ public class InCallPresenter implements CallList.Listener, AudioModeProvider.Aud
         externalCallList.removeExternalCallListener(externalCallNotifier);
       }
       statusBarNotifier = null;
+
+      if (dndHandler != null) {
+        removeListener(dndHandler);
+      }
+      dndHandler = null;
 
       if (callList != null) {
         callList.removeListener(this);

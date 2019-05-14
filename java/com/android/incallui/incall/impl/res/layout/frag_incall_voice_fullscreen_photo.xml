@@ -97,6 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/incall_paginator"
+        android:layout_marginTop="240dp"
         android:layout_centerHorizontal="true"/>
 
     <com.android.incallui.incall.impl.InCallPaginator
@@ -113,6 +114,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         tools:background="@android:color/white"
@@ -121,7 +123,7 @@
         android:id="@+id/incall_end_call"
         style="@style/Incall.Button.End"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="85dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/incall_content_description_end_call"/>

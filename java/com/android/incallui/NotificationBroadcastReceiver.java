@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build.VERSION_CODES;
+import android.provider.Settings;
 import android.support.annotation.RequiresApi;
 import android.telecom.CallAudioState;
 import android.telecom.VideoProfile;
@@ -142,12 +143,16 @@ public class NotificationBroadcastReceiver extends BroadcastReceiver {
 
   private void answerIncomingCall(int videoState) {
     CallList callList = InCallPresenter.getInstance().getCallList();
+    boolean gamingModeOn = Settings.System.getInt(context.getContentResolver(),
+                    Settings.System.ENABLE_GAMING_MODE, 1) == 1;
     if (callList == null) {
       StatusBarNotifier.clearAllCallNotifications();
       LogUtil.e("NotificationBroadcastReceiver.answerIncomingCall", "call list is empty");
     } else {
       DialerCall call = callList.getIncomingCall();
-      if (call != null) {
+      if (call != null && gamingModeOn) {
+        call.answer(videoState);
+      } else if (call != null) {
         call.answer(videoState);
         InCallPresenter.getInstance()
             .showInCall(false /* showDialpad */, false /* newOutgoingCall */);

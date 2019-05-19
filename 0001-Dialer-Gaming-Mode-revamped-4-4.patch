@@ -1,0 +1,44 @@
+From 8cf17eb2438ea0bcd59c31d05ecce4b738b69912 Mon Sep 17 00:00:00 2001
+From: PMS22 <prathams99@rediff.com>
+Date: Sun, 19 May 2019 08:33:53 +0000
+Subject: [PATCH] Dialer: Gaming Mode revamped [4/4]
+
+Change-Id: I3abc81389e1aa61a29724f481385120e3a63a6bc
+Signed-off-by: PMS22 <prathams99@rediff.com>
+---
+ java/com/android/incallui/NotificationBroadcastReceiver.java | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/java/com/android/incallui/NotificationBroadcastReceiver.java b/java/com/android/incallui/NotificationBroadcastReceiver.java
+index 5e757cf..6f4dee9 100644
+--- a/java/com/android/incallui/NotificationBroadcastReceiver.java
++++ b/java/com/android/incallui/NotificationBroadcastReceiver.java
+@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
+ import android.content.Context;
+ import android.content.Intent;
+ import android.os.Build.VERSION_CODES;
++import android.provider.Settings;
+ import android.support.annotation.RequiresApi;
+ import android.telecom.VideoProfile;
+ import com.android.dialer.common.LogUtil;
+@@ -133,12 +134,16 @@ public class NotificationBroadcastReceiver extends BroadcastReceiver {
+ 
+   private void answerIncomingCall(Context context, int videoState) {
+     CallList callList = InCallPresenter.getInstance().getCallList();
++    boolean gamingModeOn = Settings.System.getInt(context.getContentResolver(),
++                    Settings.System.ENABLE_GAMING_MODE, 1) == 1;
+     if (callList == null) {
+       StatusBarNotifier.clearAllCallNotifications(context);
+       LogUtil.e("NotificationBroadcastReceiver.answerIncomingCall", "call list is empty");
+     } else {
+       DialerCall call = callList.getIncomingCall();
+-      if (call != null) {
++      if (call != null && gamingModeOn) {
++        call.answer(videoState);
++      } else if (call != null) {
+         call.answer(videoState);
+         InCallPresenter.getInstance()
+             .showInCall(false /* showDialpad */, false /* newOutgoingCall */);
+-- 
+2.7.4
+

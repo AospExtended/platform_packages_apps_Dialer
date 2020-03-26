@@ -1,0 +1,45 @@
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<resources>
+
+  <style name="SettingsStyle" parent="Dialer.Dark.ThemeBase.ActionBar">
+    <item name="android:textColorPrimary">@*android:color/white</item>
+    <item name="android:textColorSecondary">@color/dialer_dark_primary_text_color</item>
+    <item name="android:windowBackground">@*android:color/primary_device_default_settings</item>
+    <item name="android:colorAccent">@color/dialer_theme_color</item>
+  </style>
+  
+  <style name="Dialer.ThemeBase" parent="Dialer.Dark.ThemeBase">
+    <item name="android:colorBackground">@*android:color/primary_device_default_settings</item>
+    <item name="android:colorBackgroundFloating">@*android:color/secondary_device_default_settings</item>
+    <item name="android:textColorHint">@*android:color/material_grey_600</item>
+    <item name="android:colorPrimary">@color/dialer_theme_color</item>
+    <item name="colorPrimary">@color/dialer_theme_color</item>
+    <item name="android:colorPrimaryDark">@color/dialer_theme_color</item>
+    <item name="colorPrimaryDark">@color/dialer_theme_color</item>
+    <item name="android:colorAccent">@color/dialer_theme_color</item>
+    <item name="colorAccent">@color/dialer_theme_color</item>
+  </style>
+
+  <style name="AlertDialogTheme" parent="@*android:style/Theme.Material.Dialog">
+    <item name="android:colorBackground">@*android:color/secondary_device_default_settings</item>
+    <item name="android:colorAccent">@color/dialer_dark_secondary_color</item>
+    <item name="colorAccent">@color/dialer_dark_secondary_color</item>
+    <item name="android:textColorPrimary">@color/dialer_dark_primary_text_color</item>
+    <item name="android:textColorSecondary">@color/dialer_dark_secondary_text_color</item>
+  </style>
+
+</resources>

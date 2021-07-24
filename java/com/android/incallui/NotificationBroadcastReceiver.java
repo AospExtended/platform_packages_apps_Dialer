@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build.VERSION_CODES;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.telecom.CallAudioState;
@@ -28,6 +29,7 @@ import com.android.dialer.common.LogUtil;
 import com.android.dialer.common.concurrent.DialerExecutorComponent;
 import com.android.dialer.logging.DialerImpression;
 import com.android.dialer.logging.Logger;
+import com.android.incallui.audiomode.AudioModeProvider;
 import com.android.incallui.call.CallList;
 import com.android.incallui.call.DialerCall;
 import com.android.incallui.call.TelecomAdapter;
@@ -188,12 +190,12 @@ public class NotificationBroadcastReceiver extends BroadcastReceiver {
             new FutureCallback<Void>() {
               @Override
               public void onSuccess(Void result) {
-                answerIncomingCallCallback(call, videoState);
+                answerIncomingCallCallback(call, videoState, context);
               }
 
               @Override
               public void onFailure(Throwable t) {
-                answerIncomingCallCallback(call, videoState);
+                answerIncomingCallCallback(call, videoState, context);
                 // TODO(erfanian): Enumerate all error states and specify recovery strategies.
                 throw new RuntimeException("Failed to successfully complete pre call tasks.", t);
               }
@@ -203,9 +205,19 @@ public class NotificationBroadcastReceiver extends BroadcastReceiver {
     }
   }
 
-  private void answerIncomingCallCallback(@NonNull DialerCall call, int videoState) {
+  private void answerIncomingCallCallback(@NonNull DialerCall call, int videoState, @NonNull Context context) {
     call.answer(videoState);
-    InCallPresenter.getInstance().showInCall(false /* showDialpad */, false /* newOutgoingCall */);
+    boolean mGamingModeActive = Settings.System.getInt(context.getContentResolver(),
+                    "gaming_mode_active", 0) == 1;
+    boolean disable = Settings.System.getInt(context.getContentResolver(),
+                    "gaming_mode_hide_incall_ui", 1) == 1;
+    if (mGamingModeActive && disable ) {
+        int route = AudioModeProvider.getInstance().getAudioState().getRoute();
+        if (route == CallAudioState.ROUTE_EARPIECE && route != CallAudioState.ROUTE_SPEAKER)
+            TelecomAdapter.getInstance().setAudioRoute(CallAudioState.ROUTE_SPEAKER);
+    } else {
+        InCallPresenter.getInstance().showInCall(false /* showDialpad */, false /* newOutgoingCall */);
+    }
   }
 
   private void declineIncomingCall() {
